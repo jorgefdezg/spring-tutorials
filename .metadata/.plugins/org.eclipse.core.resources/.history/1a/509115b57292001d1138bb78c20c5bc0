@@ -1,0 +1,21 @@
+package com.jorgefernandez3.service;
+
+import org.springframework.stereotype.Service;
+
+import com.jorgefernandez3.repository.IPersonaRepo;
+import com.jorgefernandez3.repository.PersonaRepoImpl;
+
+@Service
+public class PersonaServiceImpl implements IPersonaService {
+
+	private IPersonaRepo repo;
+	
+	@Override
+	public void registrar(String nombre) {
+		repo = new PersonaRepoImpl();
+		repo.registrar(nombre);
+		
+	}
+	
+
+}

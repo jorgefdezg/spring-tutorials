@@ -1,0 +1,17 @@
+package com.jorgefernandez3.model;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Persona {
+	
+	private int  idPersona;
+	private String nombre;
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+}

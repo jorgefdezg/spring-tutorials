@@ -1,0 +1,5 @@
+package com.jorgefernandez3.repository;
+
+public interface IPersona {
+
+}

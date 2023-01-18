@@ -1,0 +1,19 @@
+package com.jorgefernandez3.repository;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.jorgefernandez3.DemoConsolaApplication;
+
+public class PersonaRepoImpl implements IPersonaRepo{
+
+	private static Logger LOG = LoggerFactory.getLogger(DemoConsolaApplication.class);
+
+	
+	@Override
+	public void registrar(String nombre) {
+		LOG.info("Se registró a " + nombre);
+	}
+
+}
+ 

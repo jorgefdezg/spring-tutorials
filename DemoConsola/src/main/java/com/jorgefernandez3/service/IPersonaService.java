@@ -1,0 +1,7 @@
+package com.jorgefernandez3.service;
+
+public interface IPersonaService {
+
+	void registrar(String nombre);
+	
+}
